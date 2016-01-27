@@ -3,7 +3,7 @@
 #include<cmath>
 #include<cstdio>
 #include<cstdlib>
-#include<string.h>
+#include<cstring>
 #include "DataStructure.h"
 
 //as for the test data:graph-16
