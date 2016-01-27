@@ -1,6 +1,7 @@
 #ifndef DATASTRUCTURE_H
 #define DATASTRUCTURE_H
 #include <cstdio>
+#include<cstring>
 #include <iostream>
 
 using namespace std;
@@ -100,7 +101,7 @@ int List::GetNeighbour(int pos)
 }
 
 
-//g¾ØÕó
+//gÂ¾Ã˜Ã•Ã³
 struct NeighbourMatrix
 {
 	int h,w;
