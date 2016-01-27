@@ -3,6 +3,7 @@
 #include<cmath>
 #include<cstdio>
 #include<cstdlib>
+#include<string.h>
 #include "DataStructure.h"
 
 //as for the test data:graph-16
@@ -68,7 +69,7 @@ int main()
 	while(times<=500)
 	{
 		times++;
-		//½ÓÏÂÀ´µÄ¹¤×÷ºÍÉÏÒ»´ÎµÄ±È½ÏÏñ£¬Çø±ðÊÇÓÐ¶à¸ötopicºÍ²¢²»ÊÇÃ¿¸öµãÖ®¼ä¶¼ÓÐ¹ØÁª
+		//æŽ¥ä¸‹æ¥çš„å·¥ä½œå’Œä¸Šä¸€æ¬¡çš„æ¯”è¾ƒåƒï¼ŒåŒºåˆ«æ˜¯æœ‰å¤šä¸ªtopicå’Œå¹¶ä¸æ˜¯æ¯ä¸ªç‚¹ä¹‹é—´éƒ½æœ‰å…³è”
 		
 		//step1: update r according to Eq 5
 			
@@ -304,7 +305,7 @@ void CalculateForg_function(NeighbourMatrix *g,double s[N][T],List ListIn[N],Lis
 		//calculate function g
 		for(current=ListOut[i].first,j=0;current!=NULL;current=current->link,j++)
 			for(k=0;k<T;k++)
-				g[i].matrix[j][k]=current->edgeweight*s[current->neighbour][k]/(Sumin[k]+Sumout[k]);//ÁÚÓòµÄ¼ÆËã
+				g[i].matrix[j][k]=current->edgeweight*s[current->neighbour][k]/(Sumin[k]+Sumout[k]);//é‚»åŸŸçš„è®¡ç®—
 		
 	}
 }
